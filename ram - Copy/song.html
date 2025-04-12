@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 500px;
+            height: 500px;
+            background-image: linear-gradient(to top left,orange 20%,blue 30%, yellow 40%, green 50%);
+            animation: color 20s ease 2s infinite normal;
+            position: relative;
+            left: 300px;
+            top: 200px;
+        }
+        @keyframes color{
+            form{
+                filter: hue-rotate(1900deg);
+            }
+            to{
+                filter: hue-rotate(0deg);
+            }
+        }
+        .common{
+            width: 300px;
+            height: 300px;
+            background-color: deeppink;
+            margin: 10px;
+            border-radius: 300px 0px 300px 0px;
+            position: absolute;
+            left: 90px;
+            top: 110px;
+            rotate:-45deg;
+            transition: all 20s;
+        }
+        .parent:hover.child1{
+            rotate:-25deg;
+        }
+        .parent:hover.child2{
+            rotate: -0deg;
+        }
+        .parent:hover.child3{
+            rotate: -60deg;
+        }
+        .parent:hover.child4{
+            rotate: -90deg;
+        }
+        .box{
+            width: 400px;
+            height: 300px;
+            background-color: chartreuse;
+            position: absolute;
+            left: 100px;
+            top: 20px;
+            border-radius: 20px 20px 10px 100%;
+        }
+        audio{
+            opacity: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div  class="common child1"></div>
+        <div class="common child2"></div>
+        <div class="common child3"></div>
+        <div class="common child4"></div>
+        <div class="common child5"></div>
+        <div class="box">
+   <audio controls  src="song.mp3" type="audio/mp3"></audio>
+   <img src="bigil.jpg" alt="" width="100px" height="100px">
+    </div>
+    </div>
+</body>
+</html>

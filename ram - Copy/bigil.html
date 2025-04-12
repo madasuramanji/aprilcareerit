@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>function returing a function</h1>
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <script>
+        function multiple(x){
+            function fn (y) {
+        return x*y;
+        }
+            return fn;
+        }
+        let triple=multiple(3);
+        triple(2);
+        triple(3);
+        document.write(triple(2));
+    </script>
+</body>
+</html>

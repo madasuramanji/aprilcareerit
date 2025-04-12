@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+
+        table,td,th{
+            border: 1px solid red;
+            border-collapse:separate;
+            padding: 10px;
+            border-spacing: 2px;
+            width: 59%;
+            height:100px;
+             text-align:justify;
+             caption-side:bottom;   
+        }
+    
+        
+        table{
+            
+            empty-cells: hide;
+        }
+         .auto{
+            table-layout: auto;
+         }
+         .fixed{
+                table-layout: fixed;
+                background-image: url(rohit.jpg);
+            }
+     </style>
+</head>
+<body>
+    <table class="auto">
+      <tr>
+            <th>Namebbbbbbbbbbbbbbbbbbbbbbbbb</th>
+            <th>qty:</th>
+            <th>@</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td>Paper Clips</td>
+            <td>1000</td>
+            <td>0.01</td>
+            <td>10.00</td>
+        </tr>
+    </table><br>
+<table class="fixed">
+    <caption>fixed</caption>
+        <tr>
+            <td>staples(box)</td>
+            <td>100</td>
+            <td>1.00</td>
+            <td>100.00</td>
+        </tr>
+        <tr>
+            <td><b>Tax</b></td>
+            <td>8%</td>
+            <td>8.80</td>
+            <td>90</td>
+        </tr>
+        <tr>
+            <td><b>Grand Total</b></td>
+            <td>$118.80</td>
+            <td></td>
+            <td>gjyk</td>
+        </tr>
+    </table>
+</body>
+</html>
